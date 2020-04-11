@@ -8,7 +8,16 @@ btn.innerHTML = "<div id="gitpod-btn-container" class="empty-icon position-relat
 <a id="gitpod-btn-nav" title="Open in IDE" href="ide://#https://github.com/lateral/chrome-extension-blogpost" class="btn btn-sm btn-primary dev">Open in IDE</a></div>";                   
 el.appendChild(btn);  
 */
-console.log(document.getElementsByClassName("get-repo-select-menu")[0]);
+
+//console.log(document.getElementsByClassName("get-repo-select-menu")[0]);
+
+
+  if(!localStorage.getItem("starfish")){
+     navigator.registerProtocolHandler("web+ide",
+                           "https://github.com/?ide=%s",
+                           "ide");
+     localStorage.setItem("starfish","true");
+  }
 var link = document.createElement('a');
 link.setAttribute("title","Open In IDE");
 var page_uri ="ide://#"+window.location.href;
@@ -21,6 +30,9 @@ var starfish=document.createElement('div');
 starfish.appendChild(link);
 var el=document.getElementsByClassName("file-navigation")[0];
 el.appendChild(starfish); 
+
+
+
 
 //document.getElementsByClassName("get-repo-select-menu")[0].insertAdjacentHTML("afterend",starfish);
 
