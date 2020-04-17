@@ -1,5 +1,5 @@
 current_url = window.location.href;
-var page_uri = "ide://#" + window.location.href;
+var page_uri = "ide://" + window.location.href;
 
 if (current_url.indexOf("https://github.com/") != -1)
 
@@ -14,6 +14,7 @@ if (current_url.indexOf("https://github.com/") != -1)
     var link = document.createElement('a');
     link.setAttribute("title", "Open In IDE");
     //var page_uri ="ide://#"+window.location.href;
+    page_uri+=".git";
     link.setAttribute("href", page_uri);
     link.setAttribute("class", "btn btn-sm btn-primary dev")
     link.innerHTML = "Open in IDE";
