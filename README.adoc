@@ -5,7 +5,7 @@
 == Installation
 
 -  Clone This Repository.
-- Now **Load Unpacked Extension** in the `browser-extension` directory.The method for Loading Unpacked extension generally varies  across **browsers**. We'll guide you with loading up on **Google Chrome** and **Mozilla Firefox**.
+- Now **Load Unpacked Extension** in the `root` directory.The method for Loading Unpacked extension generally varies  across **browsers**. We'll guide you with loading up on **Google Chrome** and **Mozilla Firefox**.
 
 ==== Loading unpacked on Google Chrome
 - Open the Extension Management page by navigating to chrome://extensions.
@@ -21,3 +21,7 @@ Ta-da! The extension has been successfully installed
 - Select any file(like `manifest.json`) in the extension's directory(`browser-extension`).
 
 __**P.S: Browser Extensions will soon be published on Browser's App Store to simplify installation**__.
+
+== Tested on
+- Google Chrome `Version 86.0.4240.75` 
+- Mozilla  Firefox `Version 81.0.2`
