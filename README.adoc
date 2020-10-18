@@ -1,0 +1,23 @@
+= Browser Extension for Starfix
+
+==== To be able to add an "Open In IDE" button on Web Pages and launching the protocol handler we need a browser extension. The extension also acts as the __integration between web and desktop__.
+
+== Installation
+
+-  Clone This Repository.
+- Now **Load Unpacked Extension** in the `browser-extension` directory.The method for Loading Unpacked extension generally varies  across **browsers**. We'll guide you with loading up on **Google Chrome** and **Mozilla Firefox**.
+
+==== Loading unpacked on Google Chrome
+- Open the Extension Management page by navigating to chrome://extensions.
+- The Extension Management page can also be opened by clicking on the Chrome menu, hovering over More Tools then selecting the Extensions.
+- Enable Developer Mode by clicking the toggle switch next to Developer mode.
+- Click the LOAD UNPACKED button and select the extension directory(`browser-extension`).
+Ta-da! The extension has been successfully installed
+
+==== Loading unpacked on Mozilla Firefox
+- Open the `about:debugging` page
+- Click "This Firefox" (in newer versions of Firefox)
+- Click "Load Temporary Add-on"
+- Select any file(like `manifest.json`) in the extension's directory(`browser-extension`).
+
+__**P.S: Browser Extensions will soon be published on Browser's App Store to simplify installation**__.
