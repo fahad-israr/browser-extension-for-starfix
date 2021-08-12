@@ -4,7 +4,7 @@
 
 == Installation
 
--  Clone This Repository.
+-  Clone This Repository .
 - Now **Load Unpacked Extension** in the `root` directory.The method for Loading Unpacked extension generally varies  across **browsers**. We'll guide you with loading up on **Google Chrome** and **Mozilla Firefox**.
 
 ==== Loading unpacked on Google Chrome
