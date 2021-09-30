@@ -20,7 +20,8 @@ jobs:
           dest: starfix-extension-chrome.zip
 
       - name: "publish extension on chrome webstore"
-        uses: Klemensas/chrome-extension-upload-action@master
+      - uses: actions/checkout@v2
+      - uses: Klemensas/chrome-extension-upload-action@master
         with:
           refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           client-id: ${{ secrets.GOOGLE_CHROME_CLIENT_ID }}
