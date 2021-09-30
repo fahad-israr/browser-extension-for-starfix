@@ -1,4 +1,4 @@
-= Browser Extension for Starfix
+= Browser Extension for Starfix 
 
 ==== To be able to add an "Open In IDE" button on Web Pages and launching the protocol handler we need a browser extension. The extension also acts as the __integration between web and desktop__.
 
