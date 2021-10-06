@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Starfix",
-  "version": "1.0",
+  "version": "1.5",
   "description": "Utility  Extension for Starfix.It Intends to  add an \"Open in IDE\" button on Github.Easily Configurable to chose between cloning Protocols viz HTTPS and SSH",
   "author": "Fahad Israr",
   "icons": { "16": "starfix_icon.png",
