@@ -30,6 +30,7 @@ jobs:
         with:
           refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           client-id: ${{ secrets.GOOGLE_CHROME_CLIENT_ID }}
+          client-secret:: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           zip: starfix-extension-chrome.zip
           extension: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
           publishTarget: true
