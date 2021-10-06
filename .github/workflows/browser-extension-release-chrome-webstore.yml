@@ -28,10 +28,10 @@ jobs:
       - name: "publish extension on chrome webstore"
         uses: trmcnvn/chrome-addon@v2
         with:
-          refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
+          extension: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
+          zip: starfix-extension-chrome.zip
           client-id: ${{ secrets.GOOGLE_CHROME_CLIENT_ID }}
           client-secret:: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
-          zip: starfix-extension-chrome.zip
-          extension: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
+          refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           publishTarget: true
 
