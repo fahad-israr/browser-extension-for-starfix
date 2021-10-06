@@ -26,7 +26,7 @@ jobs:
           path: ${{ github.workspace }}/starfix-extension-chrome.zip
 
       - name: "publish extension on chrome webstore"
-        uses: trmcnvn/chrome-addon@v3
+        uses: trmcnvn/chrome-addon@master
         with:
           extension: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
           zip: starfix-extension-chrome.zip
