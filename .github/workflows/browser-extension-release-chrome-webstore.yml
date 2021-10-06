@@ -26,12 +26,11 @@ jobs:
           path: ${{ github.workspace }}/starfix-extension-chrome.zip
 
       - name: "publish extension on chrome webstore"
-        uses: trmcnvn/chrome-addon@v2
+        uses: trmcnvn/chrome-addon@v3
         with:
           extension: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
           zip: starfix-extension-chrome.zip
           client-id: ${{ secrets.GOOGLE_CHROME_CLIENT_ID }}
           client-secret:: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
-          publishTarget: true
 
