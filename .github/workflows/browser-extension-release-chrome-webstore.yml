@@ -31,5 +31,6 @@ jobs:
           extension-id: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
           file-path: starfix-extension-chrome.zip
           client-id: ${{ secrets.GOOGLE_CHROME_CLIENT_ID }}
+          client-secret: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
 
