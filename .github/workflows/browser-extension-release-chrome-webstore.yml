@@ -26,11 +26,11 @@ jobs:
           path: ${{ github.workspace }}/starfix-extension-chrome.zip
 
       - name: "publish extension on chrome webstore"
-        uses: Klemensas/chrome-extension-upload-action@master
+        uses: trmcnvn/chrome-addon@v2
         with:
           refresh-token: ${{ secrets.GOOGLE_CHROME_REFRESH_TOKEN }}
           client-id: ${{ secrets.GOOGLE_CHROME_CLIENT_ID }}
-          file-name: starfix-extension-chrome.zip
-          app-id: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
-          publish: true
+          zip: starfix-extension-chrome.zip
+          extension: 'ojlhpgekmmemhihkigibkhehlejkjdmo'
+          publishTarget: true
 
